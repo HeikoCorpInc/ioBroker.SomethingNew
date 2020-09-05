@@ -1,0 +1,80 @@
+{
+    "common": {
+        "name":                 "test",
+        "version":              "1.1.1",
+        "news": {
+            "1.1.1": {
+                "en": 				"Inital version",
+                "de": 				"Erste Version",
+            }
+        },
+        "authors": [
+            "HeikoCorpInc",
+            "foxthefox <foxthefox@wysiwis.net>",
+            "bluefox <dogafox@gmail.com>"
+        ],
+        "title":                "test",
+          "titleLang": {
+            "en": "milight test adapter",
+            "de": "Milight test Adapter",
+          },
+        "desc": {
+            "en": "milight test lamp adaptor",
+            "de": "milight test lampenadapter",
+          },
+        "platform":             "Javascript/Node.js",
+        "mode":                 "daemon",
+        "license": 	   	        "NONE",
+        "keywords":		        ["milight", "easybulb", "rgb", "limitlessLED"],
+        "type":			        "lighting",
+        "enabled":              true,
+        "messagebox":           true,
+        "materialize":          true,
+        "compact":              true,
+        "icon":                 "easybulb_logo.png",
+        "extIcon":          	"",
+        "readme":           	"https://github.com/HeikoCorpInc/ioBroker.somethingNew/blob/master/README.md",
+        "loglevel":		        "info",
+        "restartAdapters":      ["vis"]
+
+    },
+    "native": {
+        "version":  "6",
+        "delayBetweenCommands": "100",
+        "commandRepeat":  "1",
+        "ip":       "",
+        "port":     "5987",
+        "zone1":    "RGBW",
+        "zone2":    "RGBW",
+        "zone3":    "RGBW",
+        "zone4":    "RGBW",
+        "v5onFullBright": false
+    },
+    
+    "objects": [
+      
+    ],
+    "instanceObjects": [
+        {
+            "_id":  "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id":  "info.connection",
+            "type": "state",
+            "common": {
+                "role":  "indicator.connected",
+                "name":  "If connected to MiLight gateway",
+                "type":  "boolean",
+                "read":  true,
+                "write": false,
+                "def":   false
+            },
+            "native": {}
+        }
+    ]
+}
