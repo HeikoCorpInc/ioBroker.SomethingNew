@@ -1,6 +1,6 @@
 {
     "common": {
-        "name":                 "test",
+        "name":                 "somethingNew",
         "version":              "1.1.1",
         "news": {
             "1.1.1": {
@@ -13,7 +13,7 @@
             "foxthefox <foxthefox@wysiwis.net>",
             "bluefox <dogafox@gmail.com>"
         ],
-        "title":                "test",
+        "title":                "somethingNew",
           "titleLang": {
             "en": "milight test adapter",
             "de": "Milight test Adapter"

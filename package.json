@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/HeikoCorpInc/ioBroker.somethingNew/issues"
   },
-  "main": "milight.js",
+  "main": "main.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
