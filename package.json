@@ -1,0 +1,51 @@
+{
+  "name": "iobroker.somethingNew",
+  "version": "1.1.1",
+  "description": "ioBroker milight test Adapter",
+  "author": {
+    "name": "HeikoCorpInc",
+    "email": ""
+  },
+  "contributors": [
+    {
+      "name": "HeikoCorpInc"
+    },
+    {
+      "name": "foxthefox"
+    },
+    {
+      "name": "bluefox",
+      "email": "dogafox@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/HeikoCorpInc/ioBroker.somethingNew",
+  "license": "NONE",
+  "keywords": [
+    "ioBroker",
+    "light",
+    "easybulb",
+    "milight",
+    "limitlessLED"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeikoCorpInc/ioBroker.somethingNew"
+  },
+  "dependencies": {
+    "node-milight-promise": "^0.3.1",
+    "@iobroker/adapter-core": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/HeikoCorpInc/ioBroker.somethingNew/issues"
+  },
+  "main": "milight.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --exit"
+  },
+  "readmeFilename": "README.md"
+}
