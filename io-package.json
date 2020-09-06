@@ -34,7 +34,7 @@
         "icon":                 "easybulb_logo.png",
         "extIcon":          	"",
         "readme":           	"https://github.com/HeikoCorpInc/ioBroker.somethingNew/blob/master/README.md",
-        "loglevel":		        "info",
+        "loglevel":		        "debug",
         "restartAdapters":      ["vis"]
 
     },
