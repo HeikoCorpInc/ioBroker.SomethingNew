@@ -1,7 +1,7 @@
 {
     "common": {
         "name":                 "somethingNew",
-        "version":              "1.1.1",
+        "version":              "1.1.2",
         "news": {
             "1.1.1": {
                 "en": 				"Inital version",
@@ -34,7 +34,7 @@
         "icon":                 "easybulb_logo.png",
         "extIcon":          	"",
         "readme":           	"https://github.com/HeikoCorpInc/ioBroker.somethingNew/blob/master/README.md",
-        "loglevel":		        "info",
+        "loglevel":		        "debug",
         "restartAdapters":      ["vis"]
 
     },
