@@ -132,7 +132,7 @@ let adapter;
 function startAdapter(options) {
      options = options || {};
      Object.assign(options, {
-        name: 'sometingNew',
+        name: 'somethingNew',
         unload: function (cb) {
             if (light) {
                 light.close();
