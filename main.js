@@ -569,9 +569,9 @@ function main() {
         light = new require(__dirname + '/lib/bridge.js')({
             ip:                     adapter.config.ip,
             port:                   parseInt(adapter.config.port, 10) || 5987,
-            reconnectTimeout:       1000,
-            disconnectTimeout:      1000,
-            keepAliveTimeout:       100000,
+            reconnectTimeout:       10000,
+            disconnectTimeout:      10000,
+            keepAliveTimeout:       10000,
             delayBetweenCommands:   50,
             commandRepeat:          adapter.config.commandRepeat,
             debug:                  true,
