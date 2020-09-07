@@ -8,7 +8,7 @@ var commands;
 
 var nameStates = {
     v6 :{
-        basic:  ['state', 'on', 'off', 'whiteMode', 'brightnessUp', 'brightnessDown', 'brightness', 'colorUp', 'colorDown', 'color', 'rgb', 'mode'],
+        basic:  ['state', 'on', 'off', 'whiteMode', 'brightnessUp', 'brightnessDown', 'brightness', 'maxBright', 'mmidBright', 'minBright', 'rgb', 'mode'],
         White:  ['state', 'on', 'off', 'maxBright', 'brightnessUp', 'nightMode', 'brightnessDown', 'warmer', 'cooler', 'nightModeSwitch'],
         RGBO:   ['state', 'on', 'off', 'brightnessUp', 'brightnessDown', 'colorUp', 'colorDown', 'color', 'rgb','modeSpeedUp', 'modeSpeedDown', 'effectModeNext', 'effectModePrev'],
         RGBW:   ['state', 'on', 'off', 'colorMode', 'whiteMode', 'nightMode', 'brightnessUp', 'brightnessDown', 'brightness', 'colorUp', 'colorDown', 'color', 'rgb', 'hue', 'mode', 'modeSpeedUp', 'modeSpeedDown', 'link', 'unlink'],
@@ -197,6 +197,9 @@ function startAdapter(options) {
                 if (dp === 'color')      dp = 'colorMode'; //colorSet nowhere else used
                 if (dp === 'saturation') dp = 'saturationSet';
                 if (dp === 'colorTemp')  dp = 'colorTempSet';
+                if (dp === 'maxBright')  dp = 'maxBrightSet';
+                if (dp === 'midBright')  dp = 'midBrightSet';
+                if (dp === 'minBright')  dp = 'minBrightSet';
 
                 if (adapter.config.version === '6') {
                     if (dp === 'brightness') dp = 'brightnessSet';
